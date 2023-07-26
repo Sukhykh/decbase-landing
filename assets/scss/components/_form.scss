@@ -1,0 +1,97 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 77.2rem;
+    width: 100%;
+
+    &__person {
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+        justify-content: space-between;
+        margin-bottom: 6rem;
+
+        @media screen and (max-width: $breakpoint70) {
+            flex-direction: column;
+            gap: 6rem;
+        }
+    }
+
+    &__name,
+    &__surname {
+        max-width: 34rem;
+        width: 100%;
+
+        @media screen and (max-width: $breakpoint70) {
+            max-width: unset;
+        }
+    }
+
+    &__email {
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+
+    &__name,
+    &__surname,
+    &__email {
+        @include singleFont('OpenSans', 600, 2rem, 100%);
+        padding: 1.5rem  4rem;
+        background-color: $formBackground;
+        border-radius: 2rem 0;
+        color: $brownAccent;
+
+        &::placeholder {
+            @include singleFont('Raleway', 400, 1.8rem, 100%);
+            color: $text;
+        }
+
+        &:focus,
+		&:hover {
+			outline: 0.2rem solid $brownAccent;
+		}
+
+		&:valid {
+			outline: 0.2rem solid $greenAccent;
+            color: $greenAccent;
+		}
+    }
+
+    &__alert {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        margin-bottom: 3rem;
+        padding: 2rem;
+        border: 0.2rem solid;
+        border-radius: 2rem 0;
+
+        &--none {
+            visibility: hidden
+        }
+        &--true {
+            border-color: $greenAccent;
+        }
+        &--false {
+            border-color: $brownAccent;
+        }
+    }
+
+    &__true {
+        @include singleFont('OpenSans', 400, 1.8rem, 100%);
+        color: $greenAccent
+    }
+
+    &__false {
+        @include singleFont('OpenSans', 400, 1.8rem, 100%);
+        color: $brownAccent
+    }
+
+    &__btn {
+        cursor: pointer;
+        @include button;
+        padding: 1.5rem 4rem    
+    }
+}

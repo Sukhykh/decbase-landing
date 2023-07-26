@@ -1,0 +1,47 @@
+/* Base resets */
+@import 'reset';
+
+/* General styles */
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'animation';
+
+/* Sections */
+@import 'components/header';
+@import 'components/hero';
+
+@import 'components/aboutUs';
+@import 'components/twentyYears';
+@import 'components/completedWork';
+@import 'components/testimonials';
+@import 'components/letestNews';
+@import 'components/formSection';
+@import 'components/footer';
+@import 'components/copyright';
+
+
+
+/* Components */
+@import 'components/logo';
+@import 'components/navigation';
+@import 'components/burger';
+@import 'components/testimonialsCard';
+@import 'components/newsCard';
+@import 'components/form';
+
+
+/* General styles */
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+	width: 1rem;
+}
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: $brownAccent;
+}

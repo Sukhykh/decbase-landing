@@ -1,0 +1,166 @@
+.footer {
+    background-color: $graySection;
+    padding-bottom: 1.5rem;
+
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+        justify-content: space-between;
+        padding: 13rem 0 7rem;
+
+        @media screen and (max-width: $breakpoint140) {
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: $breakpoint40) {
+            gap: 3rem;
+            padding-top: 7rem;
+        }
+    }
+
+    &__logo-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        max-width: 35rem;
+        width: 100%;
+
+        @media screen and (max-width: $breakpoint140) {
+            max-width: unset;
+        }
+
+        @media screen and (max-width: $breakpoint40) {
+            align-items: center;
+        }
+    }
+
+    &__text {
+        @include text;
+
+        @media screen and (max-width: $breakpoint40) {
+            text-align: center;
+        }
+    }
+
+    &__menu-bar {
+        display: flex;
+        gap: 6.5rem;
+
+        @media screen and (max-width: $breakpoint140) {
+            width: 100%;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        @media screen and (max-width: $breakpoint70) {
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: $breakpoint40) {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__menu-title {
+        @include singleFont('OpenSans', 600, 2.4rem, 150%);
+        color: $title;
+        text-transform: capitalize;
+    }
+
+    &__menu-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__menu-link,
+    &__menu-mail,
+    &__menu-tel {
+        @include text;
+        text-transform: capitalize;
+        white-space: nowrap;
+        transition: all 0.3s linear;
+        &:hover {
+            @media (hover: hover) {
+                color: $greenAccent;
+            }
+        }
+        &:focus {
+            color: $greenAccent;
+        }
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
+    &__social-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        @media screen and (max-width: $breakpoint140) {
+            align-items: start;
+        }
+
+        @media screen and (max-width: $breakpoint40) {
+            align-items: center;
+        }
+    }
+
+    &__social-menu {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__social-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.7rem;
+        height: 3.7rem;
+        padding: 0.8rem;
+        border-radius: 50%;
+        background-color: $social;
+        transition: all 0.3s linear;
+
+        &:hover {
+            @media (hover: hover) {
+                background-color: $greenAccent;
+            }
+        }
+        &:focus {
+            background-color: $greenAccent;
+        }
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
+    &__social-svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__social-link {
+        fill: $white;
+    }
+
+    &__divider {
+        width: 100%;
+        height: 0.1rem;
+        background-color: $divider;
+    }
+}

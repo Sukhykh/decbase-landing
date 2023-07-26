@@ -1,0 +1,88 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+
+    @media screen and (max-width: $breakpoint150) {
+        gap: 1rem;
+    }
+
+    &__menu {
+        display: block;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        display: block;
+    }
+
+    &__link {
+        @include singleFont('OpenSans', 600, 1.6rem, 100%);
+        padding: 0.5rem 2rem;
+        border: 0.5rem solid transparent;
+        border-radius: 2rem;
+        color: $title;
+        text-transform: uppercase;
+        transition: all 0.3s linear;
+
+        @media screen and (max-width: $breakpoint150) {
+            padding-inline: 0.5rem;
+        }
+
+        &:hover {
+            @media (hover: hover) {
+                border-color: $greenAccent;
+                color: $greenAccent;
+            }
+        }
+        &:focus {
+            border-color: $greenAccent;
+            color: $greenAccent;
+        }
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
+    &__btn-bar {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__btn {
+        @include button(false);
+    }
+}
+
+.mobile {
+    & .navigation__menu {
+        display: none;
+    }
+    
+    & .mobile-menu {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: -1px;
+        right: -1px;
+        z-index: 1;
+        transform-origin: top;
+        animation: openBurger 1s linear;
+        animation-fill-mode: forwards;
+    }
+
+    & .navigation__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin: 5rem auto;
+    }
+
+    & .navigation__link {
+        padding-inline: 2rem;
+    }
+}

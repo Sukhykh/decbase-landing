@@ -1,0 +1,74 @@
+.news-card {
+    max-width: calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+    transform-origin: top;
+    animation: letestNews 0.5s linear;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+
+    @media screen and (max-width: $breakpoint70) {
+        max-width: 100%;
+    }
+
+    &:hover {
+        @media (hover: hover) {
+            & .news-card__picture-img {
+                scale: 1.2;
+            }
+        }
+    }
+
+    &__picture {
+        @include framedPicture(true, 1.7rem, 10rem);
+    }
+    
+    &__picture-wrapper {
+        max-width: 58.6rem;
+        width: 100%;
+        border-radius: 10rem 0;
+        overflow: hidden;
+
+        @media screen and (max-width: $breakpoint70) {
+            max-width: unset;
+        }
+    }
+
+    &__picture-img {
+        width: 100%;
+        height: auto;
+        transition: all 0.3s linear;
+    }
+
+    &__descr {
+        padding-top: 4.3rem;            
+        transform-origin: top;
+        animation: letestNews 0.5s linear;
+        animation-fill-mode: forwards;
+
+        transition: all 0.3s linear;
+
+        &--none {
+            opacity: 0;
+            height: 0;
+            scale: 0;
+        }
+    }
+
+    &__title {
+        @include singleFont('OpenSans', 600, 3rem, 100%);
+        color: $title;
+        margin-bottom: 1.7rem
+    }
+
+    &__text {
+        max-width: 60.3rem;
+        @include text;
+        margin-bottom: 4.5rem;
+    }
+
+    &__btn {
+        @include button;
+        padding: 1.4rem 3.5rem;
+    }
+}

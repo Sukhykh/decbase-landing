@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Louis Saville",
+        "post": "/CEO at Google inc",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img": "louise.png"
+    },
+    {
+        "name": "Rekha Varadwaz",
+        "post": "/Manager at Nike inc",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img": "rekha.png"
+    },
+    {
+        "name": "Tony Stark",
+        "post": "/CEO of Stark Industries",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img": "tony.png"
+    },
+    {
+        "name": "Bruce Wayne",
+        "post": "/Playboy and philanthropist",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img": "bruce.png"
+    },
+    {
+        "name": "Oprah Winfrey",
+        "post": "/Television producer, actress",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img": "oprah.png"
+    },
+    {
+        "name": "Barack Obama",
+        "post": "/American politician",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img": "barack.png"
+    }
+]

@@ -1,0 +1,16 @@
+.copyright {
+    @include section(0, 2.5rem);
+
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        @include text;
+        text-align: center;
+    }
+
+    &__color {
+        color: $greenAccent;
+    }
+}

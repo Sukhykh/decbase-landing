@@ -1,0 +1,36 @@
+.form-section {
+    @include section(8rem, 9.2rem);
+
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.7rem;
+    }
+
+    &__title {
+        @include singleFont('Poppins', 500, 4.8rem, 100%);
+        color: $title;
+        letter-spacing: 3.84px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__divider {
+        max-width: 46rem;
+        width: 100%;
+        height: 0.1rem;
+        background-color: $divider;
+    }
+
+    &__text {
+        @include text;
+        max-width: 64.6rem;
+        width: 100%;
+        text-align: center;
+    }
+}

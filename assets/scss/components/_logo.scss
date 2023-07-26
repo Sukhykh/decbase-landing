@@ -1,0 +1,26 @@
+.logo {
+    height: 5rem;
+
+    &__img {
+        height: 100%;
+        width: auto;
+
+        &--header {
+            @media screen and (max-width: $breakpoint45) {
+                display: none;
+            }
+        }
+    }
+
+    &__logo {
+        display: none;
+        height: 100%;
+        width: auto;
+
+        &--header {
+            @media screen and (max-width: $breakpoint45) {
+                display: block;
+            }
+        }
+    }
+}

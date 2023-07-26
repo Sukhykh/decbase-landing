@@ -1,0 +1,120 @@
+@function dinamic1920($n) {
+	@return calc($n / 1920px) * 100 * 1vw;
+}
+
+@function dinamic1060($n) {
+	@return calc($n / 1100px) * 100 * 1vw;
+}
+
+@mixin container($width1: 1400px, $width2: 960px) {
+    max-width: dinamic1920($width1);
+    width: 100%;
+    margin-inline: auto;
+
+    @media screen and (min-width: $breakpoint192) {
+		max-width: 1400px;
+	}
+
+    @media screen and (max-width: $breakpoint110) {
+		max-width: dinamic1060($width2);
+	}
+}
+
+@mixin section($marginTop, $marginBottom: false) {
+    @if $marginBottom {
+        margin-top: $marginTop;
+        margin-bottom: $marginBottom;
+    } @else {
+        margin-top: $marginTop;
+        margin-bottom: $marginTop;
+    }
+}
+
+@mixin singleFont ($style, $fw, $fs, $lh) {
+    font-family: $style;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+
+@mixin button($isGreen: true) {
+    display: block;
+    padding: 0.5rem 2rem;
+    width: fit-content;
+    white-space: nowrap;
+    border-radius: 2rem 0px;
+    color: $white;
+    transition: all 0.3s linear;
+    @if $isGreen {
+        @include singleFont('OpenSans', 700, 1.8rem, 130%);
+        background-color: $greenAccent;
+        text-transform: uppercase;
+    } @else {
+        @include singleFont('OpenSans', 600, 1.6rem, 130%);
+        background-color: $brownAccent;
+        text-transform: capitalize;
+    }
+    &:hover {
+        @media (hover: hover) {
+            box-shadow: 0 1rem 2rem 0 $divider;
+        }
+    }
+    &:focus {
+        box-shadow: 0 1rem 2rem 0 $divider;
+    }
+    &:active {
+        opacity: 0.3;
+    }
+}
+
+@mixin subTitle($hero: false) {
+    color: $text;
+    text-transform: uppercase;
+    @if $hero {
+        @include singleFont('OpenSans', 600, 2rem, 150%);
+    } @else {
+        @include singleFont('Poppins', 600, 2rem, 150%);
+    }
+}
+
+@mixin title($hero: false) {
+    color: $title;
+    text-transform: capitalize;
+    @if $hero {
+        @include singleFont('Poppins', 600, 7.2rem, 110%);
+    } @else {
+        @include singleFont('Poppins', 500, 4.8rem, 120%);
+    }
+}
+
+@mixin text {
+    @include singleFont('OpenSans', 400, 1.8rem, 167%);
+    color: $text;
+}
+
+@mixin framedPicture($bottom: true, $value, $border: 14rem) {
+    position: relative;
+    isolation: isolate;
+    @if $bottom {
+        padding: 0 $value $value 0;
+    } @else {
+        padding: $value 0 0 $value;
+    }    
+
+    &::after {
+        content: '';
+        position: absolute;
+        border: 0.2rem solid $brownFrame;
+        border-radius: $border 0;
+        @if $bottom {
+            bottom: 0;
+            right: 0;
+        } @else {
+            top: 0;
+            left: 0;
+        }
+        width: calc(100% - $value);
+        height: calc(100% - $value);
+        z-index: -1;
+    }
+}

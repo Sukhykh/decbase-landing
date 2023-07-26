@@ -1,0 +1,16 @@
+[
+    {
+        "title": "2020 Interior Design Trends",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.",
+        "imgFull": "letest-news-first.png",
+        "imgWebp": "letest-news-first.webp",
+        "imgWebp05": "letest-news-first@05.webp"
+    },
+    {
+        "title": "28 Notable Product at ARC Interior Design",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.",
+        "imgFull": "letest-news-second.png",
+        "imgWebp": "letest-news-second.webp",
+        "imgWebp05": "letest-news-second@05.webp"
+    }
+]
