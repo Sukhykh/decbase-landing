@@ -1,0 +1,119 @@
+.what-we-do {
+    @include section(22rem, 16.4rem);
+
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__subtitle {
+        @include subTitle;
+        margin-bottom: 3rem;
+    }
+
+    &__title {
+        @include title;
+        margin-bottom: 5rem;
+    }
+
+    &__btn-bar {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-bottom: 8rem;
+    }
+
+    &__btn {
+        @include singleFont('OpenSans', 700, 1.6rem, 100%);
+        width: 20rem;
+        padding: 1.5rem 0;
+        border-radius: 20px;
+        border: 0.5rem solid $greenAccent;
+        background-color: $greenAccent;
+        color: $white;
+        text-transform: uppercase;
+        transition: all 0.3s linear;
+        text-align: center; 
+        
+        &--active {
+            background-color: $white;
+            color: $greenAccent;
+        }
+
+        &:hover {
+            @media (hover: hover) {
+                background-color: $white;
+                color: $greenAccent;
+            }
+        }
+        &:focus {
+            background-color: $white;
+            color: $greenAccent;
+        }
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        justify-content: center;
+    }
+
+    &__card {
+        max-width: 45rem;
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        border-radius: 6rem 0;
+        padding: 3rem;
+        box-shadow: 0 0.8rem 2rem 0 rgba(0, 0, 0, 0.14);
+
+        &--colored {
+            background-color: $brownAccent;
+        }
+    }
+
+    &__card-img-wrapper {
+        max-width: 4.5rem;;
+        width: 100%;
+    }
+
+    &__card-img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__card-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem
+    }
+
+    &__card-title {
+        @include singleFont('OpenSans', 700, 2.4rem, 130%);
+        color: $title;
+
+        &--colored {
+            color: $white;
+        }
+    }
+
+    &__card-text {
+        @include singleFont('OpenSans', 400, 1.8rem, 150%);
+        letter-spacing: -0.18px;
+        color: $text;
+
+        &--colored {
+            color: $white;
+        }
+    }
+}

@@ -6,18 +6,25 @@ import { sliderController } from "./assets/js/sliderController.js";
 import { letestNewsController } from "./assets/js/letestNewsController.js";
 import { formValidation } from "./assets/js/formValidation.js";
 import { setYearToCopyright } from "./assets/js/setYearToCopyright.js";
+import { generateDataToHeader } from "./assets/js/generateDataToHeader.js";
+import { whatWoDoController } from "./assets/js/whatWoDoController.js";
 
 document.addEventListener("DOMContentLoaded", function() {
     /* elements */
+    const apiBar = document.querySelector('.api-bar')
     const navigation = document.querySelector(".navigation");
     const navigationMenu = document.querySelector(".navigation__menu")
     const burger = document.querySelector(".burger")
     const progressBar = document.querySelector(".header__progressbar-inner");
+    const whatWeDo = document.querySelector('.what-we-do__btn-bar')
     const letestNewsBar = document.querySelector('.letest-news__content')
     const footer = document.querySelector('.footer')
     const submitBtn = document.getElementById('formBtn')
     const left = document.getElementById('left')
     const right = document.getElementById('right')
+    const allBtn = document.getElementById('user-all')
+    const aboutUsBtn = document.getElementById('aboutUsBtn')
+    const twentyYearsBtn  = document.getElementById('twentyYearsBtn')
     
     /* state */
     const testimonials = [];
@@ -28,6 +35,11 @@ document.addEventListener("DOMContentLoaded", function() {
     updateProgressBar(progressBar, totalHeight)
     checkBurgerMenu(navigation)
     setYearToCopyright()
+    generateDataToHeader()
+    whatWoDoController(allBtn)
+
+    /* intervals ant timeouts */
+    const headerData = window.setInterval(generateDataToHeader, 20000)
 
     /* fetch */
     getLocalJson('testimonials')
@@ -63,11 +75,20 @@ document.addEventListener("DOMContentLoaded", function() {
     /* listeners */
     window.addEventListener('resize', () => checkBurgerMenu(navigation))
     window.addEventListener('scroll', () => updateProgressBar(progressBar, totalHeight))
+    apiBar.addEventListener('click', generateDataToHeader)
     footer.addEventListener('click', event => {
         if (event.target.classList.contains('footer__menu-link')) event.preventDefault()
     })
+    aboutUsBtn.addEventListener('click', event => event.preventDefault())
+    twentyYearsBtn.addEventListener('click', event => event.preventDefault())
     burger.addEventListener('click', () => isOpenedBurgerMenu(burger, navigationMenu))
     navigationMenu.addEventListener('click', () => closeBurgerMenu(burger, navigationMenu))
+    whatWeDo.addEventListener('click', event => {
+        if (event.target.classList.contains('what-we-do__btn')) {
+            event.preventDefault()
+            whatWoDoController(event.target)
+        }
+    })
     left.addEventListener('click', event =>  {
         event.preventDefault()
         sliderPages = sliderPages - 1

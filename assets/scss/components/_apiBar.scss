@@ -1,0 +1,29 @@
+.api-bar {
+    background-color: $graySection;
+    border-bottom: 0.2rem solid $divider;
+    cursor: pointer;
+
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        padding: 2rem 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__title {
+        @include singleFont('OpenSans', 700, 2rem, 167%);
+        color: $greenAccent;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        @include text;
+    }
+}

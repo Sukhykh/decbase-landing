@@ -10,7 +10,13 @@
         <link rel="stylesheet" href="assets/css/style.min.css">
     </head>
     <body>
-        <header class="header">
+        <div class="api-bar">
+            <div class="api-bar__container">
+                <div class="api-bar__wrapper">
+                </div>
+            </div>
+        </div>
+        <header class="header" id="header">
             <div class="header__container">
                 <div class="header__wrapper">
                     <a class="header__logo logo" href="#" >
@@ -24,27 +30,27 @@
                                     <a class="navigation__link" href="#">home</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a class="navigation__link" href="#">project</a>
+                                    <a class="navigation__link" href="#hero">project</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a class="navigation__link" href="#">services</a>
+                                    <a class="navigation__link" href="#whatWeDo">services</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a class="navigation__link" href="#">about</a>
+                                    <a class="navigation__link" href="#aboutUs">about</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a class="navigation__link" href="#">blog</a>
+                                    <a class="navigation__link" href="#letestNews">blog</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a class="navigation__link" href="#">shop</a>
+                                    <a class="navigation__link" href="#formSection">shop</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a class="navigation__link" href="#">contact</a>
+                                    <a class="navigation__link" href="#footer">contact</a>
                                 </li>
                             </ul>
                         </nav>
                         <div class="navigation__btn-bar">
-                            <a class="navigation__btn" href="#">Sign up</a>
+                            <a class="navigation__btn" href="#formSection">Sign up</a>
                             <div class="navigation__burger burger">
                                 <svg class="burger__svg">
                                     <use class="burger__icon" xlink:href="assets/images/sprite.svg#burger"></use>
@@ -59,7 +65,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__hero hero">
+            <section class="main__hero hero" id="hero">
                 <div class="hero__container">
                     <div class="hero__wrapper">
                         <div class="hero__content">
@@ -72,7 +78,7 @@
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                                 veniam, quis nostrud exercitation.
                             </p>
-                            <a class="hero__btn" href="#">contact</a>
+                            <a class="hero__btn" href="#footer">contact</a>
                         </div>
                         <div class="hero__picture picture">
                             <div class="hero__picture-wrapper">
@@ -100,10 +106,22 @@
                     </div>
                 </div>
             </section>
-            <section class="main__what-we-do what-we-do">
-
+            <section class="main__what-we-do what-we-do" id="whatWeDo">
+                <div class="what-we-do__container">
+                    <div class="what-we-do__wrapper">
+                        <p class="what-we-do__subtitle">what we do</p>
+                        <h2 class="what-we-do__title">our service</h2>
+                        <div class="what-we-do__btn-bar">
+                            <a class="what-we-do__btn what-we-do__btn--active" href="#" id="user-all">all</a>
+                            <a class="what-we-do__btn" href="#" id="user-1">user one</a>
+                            <a class="what-we-do__btn" href="#" id="user-2">user two</a>
+                            <a class="what-we-do__btn" href="#" id="user-3">user three</a>
+                        </div>
+                        <div class="what-we-do__content"></div>
+                    </div>
+                </div>
             </section>
-            <section class="main__about-us about-us">
+            <section class="main__about-us about-us" id="aboutUs">
                 <div class="about-us__container">
                     <div class="about-us__wrapper">
                         <div class="about-us__picture picture">
@@ -144,12 +162,12 @@
                                 predefined chunks as necessary,making this the first true
                                 generator on the Internet.
                             </p>
-                            <a class="about-us__btn" href="#">learn more</a>
+                            <a class="about-us__btn" href="#" id="aboutUsBtn">learn more</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="main__twenty-years twenty-years">
+            <section class="main__twenty-years twenty-years" id="twentyYears">
                 <div class="twenty-years__container">
                     <div class="twenty-years__wrapper">
                         <div class="twenty-years__content">
@@ -157,7 +175,7 @@
                             <h2 class="twenty-years__title">
                                 years of successful working the market
                             </h2>
-                            <a class="twenty-years__btn" href="#">read more</a>
+                            <a class="twenty-years__btn" href="#" id="twentyYearsBtn">read more</a>
                         </div>
                         <div class="twenty-years__picture picture">
                             <div class="twenty-years__picture-wrapper">
@@ -185,7 +203,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__completed-work completed-work">
+            <section class="main__completed-work completed-work" id="completedWork">
                 <div class="completed-work__container">
                     <div class="completed-work__wrapper">
                         <h2 class="completed-work__title">
@@ -238,7 +256,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__testimonials testimonials">
+            <section class="main__testimonials testimonials" id="testimonials">
                 <div class="testimonials__container">
                     <div class="testimonials__wrapper">
                         <p class="testimonials__subtitle">
@@ -264,7 +282,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__letest-news letest-news">
+            <section class="main__letest-news letest-news" id="letestNews">
                 <div class="letest-news__container">
                     <div class="letest-news__wrapper">
                         <p class="letest-news__subtitle">
@@ -277,7 +295,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__form form-section">
+            <section class="main__form form-section" id="formSection">
                 <div class="form-section__container">
                     <div class="form-section__wrapper">
                         <h2 class="form-section__title">
@@ -323,7 +341,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer logo__img--header" id="footer">
             <div class="footer__container">
                 <div class="footer__wrapper">
                     <div class="footer__logo-bar">
