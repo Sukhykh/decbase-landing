@@ -11,6 +11,7 @@ import { whatWoDoController } from "./assets/js/whatWoDoController.js";
 
 document.addEventListener("DOMContentLoaded", function() {
     /* elements */
+    const preloader = document.querySelector('.preloader')
     const apiBar = document.querySelector('.api-bar')
     const navigation = document.querySelector(".navigation");
     const navigationMenu = document.querySelector(".navigation__menu")
@@ -40,6 +41,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     /* intervals ant timeouts */
     const headerData = window.setInterval(generateDataToHeader, 20000)
+    setTimeout(() => {
+        preloader.classList.add('preloader--none')
+        document.body.classList.remove('body--none')
+    }, 5000)
 
     /* fetch */
     getLocalJson('testimonials')

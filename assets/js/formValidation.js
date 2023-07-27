@@ -42,9 +42,9 @@ export const formValidation = () => {
         alert.classList.remove('form__alert--false');
         alert.classList.add('form__alert--true');
         alert.innerHTML = `<p class="form__true">Your subscription was successful</p>`;
-    
-
-    
+        setTimeout(() => {
+            alert.classList.add('form__alert--none');
+        }, 1000)
     } else {
         alert.classList.remove('form__alert--none');
         alert.classList.remove('form__alert--true');

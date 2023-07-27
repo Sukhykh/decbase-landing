@@ -5,5 +5,5 @@ export const saveToLocalStorage = (name, surname, email) => {
     let savedData = JSON.parse(localStorage.getItem('users')) || {};
     savedData[user] = email;
     localStorage.setItem('users', JSON.stringify(savedData));
-    if (name.toLowerCase() === 'sigma') greetingsToSigmaUser()
+    if (name.toLowerCase() === 'sigma') greetingsToSigmaUser(name)
 }

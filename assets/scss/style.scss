@@ -19,7 +19,8 @@
 @import 'components/formSection';
 @import 'components/footer';
 @import 'components/copyright';
-
+@import 'components/preloader';
+@import 'components/sigmaModal';
 
 
 /* Components */
@@ -36,6 +37,12 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
+}
+
+.body {
+	&--none {
+		overflow: hidden;
+	}
 }
 ::-webkit-scrollbar {
 	width: 1rem;
