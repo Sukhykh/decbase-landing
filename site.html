@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="header__progressbar-outer">
-                    <div class="header__progressbar-inner">
+                    <div class="header__progressbar-inner"></div>
                 </div>
             </div>
         </header>
@@ -326,7 +326,7 @@
                                     id="name" 
                                     placeholder="Enter your name..." 
                                     required 
-                                    autocomplete="false"
+                                    autocomplete="off"
                                     >
                                 <input 
                                     class="form__surname" 
@@ -335,7 +335,7 @@
                                     id="surname" 
                                     placeholder="Enter your surname..." 
                                     required
-                                    autocomplete="false"
+                                    autocomplete="off"
                                     >
                             </div>
                             <input 
@@ -345,6 +345,7 @@
                                 id="email" 
                                 placeholder="Enter your e-mail..." 
                                 required
+                                autocomplete="off"
                                 >
                             <div class="form__alert form__alert--none">
                             </div>
@@ -521,7 +522,7 @@
             </div>
             <div class="footer__divider"></div>
         </footer>
-        <section class="copyright">
+        <div class="copyright">
             <div class="copyright__container">
                 <div class="copyright__wrapper">
                     <span class="copyright__text">Copyright &#64;</span>
@@ -530,15 +531,14 @@
                     <span class="copyright__text">All right reserved</span>
                 </div>
             </div>
-        </section>
+        </div>
         <div class="sigma-modal sigma-modal--none">
             <div class="sigma-modal__text sigma-modal__text--top">
-                <h2 class="sigma-modal__text-hello"></h2>
+                <p class="sigma-modal__text-hello"></p>
                 <p class="sigma-modal__text-info">just today
                     <span class="sigma-modal__text-date">27-07-2023</span>
                 </p>
             </div>
-            
             <div class="sigma-modal__center"></div>
             <div class="sigma-modal__spin sigma-modal__spin--one"></div>
             <div class="sigma-modal__spin sigma-modal__spin--two"></div>

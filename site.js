@@ -94,10 +94,8 @@ document.addEventListener("DOMContentLoaded", function() {
     burger.addEventListener('click', () => isOpenedBurgerMenu(burger, navigationMenu))
     navigationMenu.addEventListener('click', () => closeBurgerMenu(burger, navigationMenu))
     whatWeDo.addEventListener('click', event => {
-        if (event.target.classList.contains('what-we-do__btn')) {
-            event.preventDefault()
-            whatWoDoController(event.target)
-        }
+        event.preventDefault()
+        event.target.classList.contains('what-we-do__btn--active') ? whatWoDoController(allBtn) : whatWoDoController(event.target);
     })
     left.addEventListener('click', event =>  {
         event.preventDefault()

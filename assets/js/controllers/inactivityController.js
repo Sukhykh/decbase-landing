@@ -5,6 +5,8 @@ let timeoutId;
 let resetTimeoutId;
 
 const newTimer = () => {
+    modal.classList.add('inactiviti--none');
+    document.body.classList.remove('body--none');
     clearTimeout(timeoutId);
     clearTimeout(resetTimeoutId);
     resetTimeoutId = setTimeout(() => {
@@ -13,11 +15,6 @@ const newTimer = () => {
     timeoutId = setTimeout(() => {
         modal.classList.remove('inactiviti--none');
         document.body.classList.add('body--none');
-        modal.addEventListener('click', () => {
-            modal.classList.add('inactiviti--none');
-            document.body.classList.remove('body--none');
-            newTimer()
-        })
     }, inactivityTimer);
 }
 
