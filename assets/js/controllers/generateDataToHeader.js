@@ -1,5 +1,5 @@
-import { getDataFromRandomApi } from "./getDataFromRandomApi.js"
-import { createDataInHeader } from "./createDataInHeader.js";
+import { getDataFromRandomApi } from "../fetches/getDataFromRandomApi.js"
+import { createDataInHeader } from "../construcrors/createDataInHeader.js";
 
 const section = document.querySelector('.api-bar__wrapper');
 const URL_LINK = [ 

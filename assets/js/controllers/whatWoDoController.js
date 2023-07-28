@@ -1,5 +1,5 @@
-import { getDataFromRandomApi } from "./getDataFromRandomApi.js"
-import { createWhatWeDoCard } from "./createWhatWeDoCard.js"
+import { getDataFromRandomApi } from "../fetches/getDataFromRandomApi.js"
+import { createWhatWeDoCard } from "../construcrors/createWhatWeDoCard.js"
 
 const URL_LINK = 'https://jsonplaceholder.typicode.com/posts'
 const filterBar = document.querySelectorAll('.what-we-do__btn')

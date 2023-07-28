@@ -1,4 +1,4 @@
-import { createLatestNewsCard } from "./createLetestNewsCard.js"
+import { createLatestNewsCard } from "../construcrors/createLetestNewsCard.js"
 
 const letestNews = document.querySelector('.letest-news__content')
 

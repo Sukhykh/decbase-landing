@@ -21,7 +21,7 @@
 @import 'components/copyright';
 @import 'components/preloader';
 @import 'components/sigmaModal';
-
+@import 'components/inactiviti';
 
 /* Components */
 @import 'components/logo';
@@ -31,7 +31,6 @@
 @import 'components/testimonialsCard';
 @import 'components/newsCard';
 @import 'components/form';
-
 
 /* General styles */
 html {
@@ -44,6 +43,7 @@ html {
 		overflow: hidden;
 	}
 }
+
 ::-webkit-scrollbar {
 	width: 1rem;
 }

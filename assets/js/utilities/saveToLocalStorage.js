@@ -1,4 +1,4 @@
-import { greetingsToSigmaUser } from "./greetingsToSigmaUser.js";
+import { greetingsToSigmaUser } from "../controllers/greetingsToSigmaUser.js";
 
 export const saveToLocalStorage = (name, surname, email) => {
     const user = `${name}_${surname}`.toLowerCase()

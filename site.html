@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decbase Landing</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+        <link rel="stylesheet" href="assets/css/style.min.css">
+    </head>
+    <!-- <body class="body"> -->
+    <body class="body body--none">
+        <div class="preloader">
+            <div class="preloader__spin preloader__spin--one"></div>
+            <div class="preloader__spin preloader__spin--two"></div>
+            <div class="preloader__spin preloader__spin--three"></div>
+            <div class="preloader__spin preloader__spin--four"></div>
+            <div class="preloader__spin preloader__spin--five"></div>
+            <div class="preloader__spin preloader__spin--six"></div>
+            <div class="preloader__spin preloader__spin--seven"></div>
+            <div class="preloader__spin preloader__spin--eight"></div>
+            <div class="preloader__spin preloader__spin--nine"></div>
+            <div class="preloader__text">loading...</div>
+        </div>
+        <div class="api-bar">
+            <div class="api-bar__container">
+                <div class="api-bar__wrapper">
+                </div>
+            </div>
+        </div>
+        <header class="header" id="header">
+            <div class="header__container">
+                <div class="header__wrapper">
+                    <a class="header__logo logo" href="#" >
+                        <img class="logo__img logo__img--header" src="assets/images/logo.png" alt="logo">
+                        <img class="logo__logo logo__logo--header" src="assets/images/logo-icon.png" alt="logo">
+                    </a>
+                    <div class="header__navigation navigation">
+                        <nav class="navigation__menu">
+                            <ul class="navigation__list">
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">home</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#hero">project</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#whatWeDo">services</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#aboutUs">about</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#letestNews">blog</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#formSection">shop</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#footer">contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="navigation__btn-bar">
+                            <a class="navigation__btn" href="#formSection">Sign up</a>
+                            <div class="navigation__burger burger">
+                                <svg class="burger__svg">
+                                    <use class="burger__icon" xlink:href="assets/images/sprite.svg#burger"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__progressbar-outer">
+                    <div class="header__progressbar-inner">
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__hero hero" id="hero">
+                <div class="hero__container">
+                    <div class="hero__wrapper">
+                        <div class="hero__content">
+                            <p class="hero__subtitle">modern interior</p>
+                            <h1 class="hero__title">
+                                create your interior design.
+                            </h1>
+                            <p class="hero__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation.
+                            </p>
+                            <a class="hero__btn" href="#footer">contact</a>
+                        </div>
+                        <div class="hero__picture picture">
+                            <div class="hero__picture-wrapper">
+                                <picture>
+                                    <source 
+                                        srcset="assets/images/hero.webp"
+                                        type="image/webp"
+                                        media="(min-width: 500px)"
+                                    >
+                                    <source 
+                                        srcset="assets/images/hero@05.webp"
+                                        type="image/webp"
+                                        media="(max-width: 500px)"
+                                    >
+                                    <img 
+                                        class="hero__picture-img"
+                                        width="715"
+                                        height="613"
+                                        src="assets/images/hero.png" 
+                                        alt="hero"
+                                    >
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__what-we-do what-we-do" id="whatWeDo">
+                <div class="what-we-do__container">
+                    <div class="what-we-do__wrapper">
+                        <p class="what-we-do__subtitle">what we do</p>
+                        <h2 class="what-we-do__title">our service</h2>
+                        <div class="what-we-do__btn-bar">
+                            <a class="what-we-do__btn what-we-do__btn--active" href="#" id="user-all">all</a>
+                            <a class="what-we-do__btn" href="#" id="user-1">user one</a>
+                            <a class="what-we-do__btn" href="#" id="user-2">user two</a>
+                            <a class="what-we-do__btn" href="#" id="user-3">user three</a>
+                        </div>
+                        <div class="what-we-do__content"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__about-us about-us" id="aboutUs">
+                <div class="about-us__container">
+                    <div class="about-us__wrapper">
+                        <div class="about-us__picture picture">
+                            <div class="about-us__picture-wrapper">
+                                <picture>
+                                    <source 
+                                        srcset="assets/images/about-us.webp"
+                                        type="image/webp"
+                                        media="(min-width: 500px)"
+                                    >
+                                    <source 
+                                        srcset="assets/images/about-us@05.webp"
+                                        type="image/webp"
+                                        media="(max-width: 500px)"
+                                    >
+                                    <img 
+                                        class="about-us__picture-img"
+                                        width="680"
+                                        height="711"
+                                        src="assets/images/about-us.png" 
+                                        alt="hero"
+                                    >
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="about-us__content">
+                            <p class="about-us__subtitle">about us</p>
+                            <h2 class="about-us__title">
+                                interioris the will of an epoch mextreo
+                            </h2>
+                            <p class="about-us__text">
+                                There are many variations of passages of Lorem Ipsum available,
+                                but the majority have suffered alteration in some form injected
+                                humour, or randomised words which don't look even slightly
+                                believable.If you are going to use a passage of Lorem Ipsum,
+                                sure there isn't anything embarrassing hidden the middleof text.
+                                All the Lorem Ipsum generators on the Internettend to repeat
+                                predefined chunks as necessary,making this the first true
+                                generator on the Internet.
+                            </p>
+                            <a class="about-us__btn" href="#" id="aboutUsBtn">learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__twenty-years twenty-years" id="twentyYears">
+                <div class="twenty-years__container">
+                    <div class="twenty-years__wrapper">
+                        <div class="twenty-years__content">
+                            <p class="twenty-years__number">20</p>
+                            <h2 class="twenty-years__title">
+                                years of successful working the market
+                            </h2>
+                            <a class="twenty-years__btn" href="#" id="twentyYearsBtn">read more</a>
+                        </div>
+                        <div class="twenty-years__picture picture">
+                            <div class="twenty-years__picture-wrapper">
+                                <picture>
+                                    <source 
+                                        srcset="assets/images/twenty-years.webp"
+                                        type="image/webp"
+                                        media="(min-width: 500px)"
+                                    >
+                                    <source 
+                                        srcset="assets/images/twenty-years@05.webp"
+                                        type="image/webp"
+                                        media="(max-width: 500px)"
+                                    >
+                                    <img 
+                                        class="twenty-years__picture-img"
+                                        width="680"
+                                        height="711"
+                                        src="assets/images/twenty-years.png" 
+                                        alt="hero"
+                                    >
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__completed-work completed-work" id="completedWork">
+                <div class="completed-work__container">
+                    <div class="completed-work__wrapper">
+                        <h2 class="completed-work__title">
+                            3000+ completed work which we have successfully done
+                        </h2>
+                        <div class="completed-work__content-outer">
+                            <div class="completed-work__content">
+                                <div class="completed-work__content-item">
+                                    <div class="completed-work__content-card">
+                                        <p class="completed-work__content-number">
+                                            980
+                                        </p>
+                                        <p class="completed-work__content-title">
+                                            projects
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="completed-work__content-item">
+                                    <div class="completed-work__content-card">
+                                        <p class="completed-work__content-number">
+                                            520
+                                        </p>
+                                        <p class="completed-work__content-title">
+                                            happy clients
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="completed-work__content-item">
+                                    <div class="completed-work__content-card">
+                                        <p class="completed-work__content-number">
+                                            330
+                                        </p>
+                                        <p class="completed-work__content-title">
+                                            winners
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="completed-work__content-item">
+                                    <div class="completed-work__content-card">
+                                        <p class="completed-work__content-number">
+                                            120
+                                        </p>
+                                        <p class="completed-work__content-title">
+                                            recoments
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__testimonials testimonials" id="testimonials">
+                <div class="testimonials__container">
+                    <div class="testimonials__wrapper">
+                        <p class="testimonials__subtitle">
+                            testimonials
+                        </p>
+                        <h2 class="testimonials__title">
+                            client says about us
+                        </h2>
+                        <div class="testimonials__btn-bar">
+                            <a class="testimonials__btn" id="left" href="#">
+                                <svg class="testimonials__svg">
+                                    <use class="testimonials__icon" xlink:href="assets/images/sprite.svg#arrow"></use>
+                                </svg>
+                            </a>
+                            <a class="testimonials__btn" id="right" href="#">
+                                <svg class="testimonials__svg">
+                                    <use class="testimonials__icon" xlink:href="assets/images/sprite.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="testimonials__content">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__letest-news letest-news" id="letestNews">
+                <div class="letest-news__container">
+                    <div class="letest-news__wrapper">
+                        <p class="letest-news__subtitle">
+                            letest news
+                        </p>
+                        <h2 class="letest-news__title">
+                            from our blog
+                        </h2>
+                        <div class="letest-news__content"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__form form-section" id="formSection">
+                <div class="form-section__container">
+                    <div class="form-section__wrapper">
+                        <h2 class="form-section__title">
+                            don`t forget to sign up
+                        </h2>
+                        <div class="form-section__divider"></div>
+                        <p class="form-section__text">
+                            Find out early about all upcoming promotions and new product releases with our newsletter.
+                        </p>
+                        <form class="form-section__form form" action="POST">
+                            <div class="form__person">
+                                <input 
+                                    class="form__name" 
+                                    type="text" name="name" 
+                                    id="name" 
+                                    placeholder="Enter your name..." 
+                                    required 
+                                    autocomplete="false"
+                                    >
+                                <input 
+                                    class="form__surname" 
+                                    type="text" 
+                                    name="surname" 
+                                    id="surname" 
+                                    placeholder="Enter your surname..." 
+                                    required
+                                    autocomplete="false"
+                                    >
+                            </div>
+                            <input 
+                                class="form__email" 
+                                type="email" 
+                                name="email" 
+                                id="email" 
+                                placeholder="Enter your e-mail..." 
+                                required
+                                >
+                            <div class="form__alert form__alert--none">
+                            </div>
+                            <input class="form__btn" type="button" value="subscribe" id="formBtn">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <div class="footer__logo-bar">
+                        <a class="footer__logo logo" href="#" >
+                            <img class="logo__img" src="assets/images/logo.png" alt="logo">
+                        </a>
+                        <p class="footer__text">
+                            But i must explain to you all this mistaken idea of dencouncing pleasure.
+                        </p>
+                    </div>
+                    <div class="footer__menu-bar">
+                        <nav class="footer__menu">
+                            <h3 class="footer__menu-title">
+                                quick links
+                            </h3>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#">
+                                        about our company   
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#">
+                                        Services WE provide
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#">
+                                        Career &amp; Opportunity
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#">
+                                        Privacy &amp; policy
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#">
+                                        Contact US
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="footer__menu">
+                            <h3 class="footer__menu-title">
+                                company
+                            </h3>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#">
+                                        about company
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#">
+                                        our testimonials
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#">
+                                        latest news
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#">
+                                        our mission
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#">
+                                        get a free quot
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="footer__menu">
+                            <h3 class="footer__menu-title">
+                                Contact us
+                            </h3>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#">
+                                        Sagrada Familia, Herba
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#">
+                                        Street Front USA
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-mail" href="mailto:brandoxide@gmail.com?subject=Contacts">
+                                        brandoxide@gmail.com
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-tel" href="tel:002568423591">
+                                        002-568423591
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__social-bar">
+                        <h3 class="footer__menu-title">
+                            follow us
+                        </h3>
+                        <div class="footer__social-menu">
+                            <a 
+                                class="footer__social-item"
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                rel="noindex, nofollow, noreferrer, noopener"
+                                >
+                                <svg class="footer__social-svg">
+                                    <use
+                                        class="footer__social-link"
+                                        xlink:href="assets/images/sprite.svg#facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a 
+                                class="footer__social-item"
+                                href="https://twitter.com/"
+                                target="_blank"
+                                rel="noindex, nofollow, noreferrer, noopener"
+                                >
+                                <svg class="footer__social-svg">
+                                    <use
+                                        class="footer__social-link"
+                                        xlink:href="assets/images/sprite.svg#twitter"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a 
+                                class="footer__social-item"
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                rel="noindex, nofollow, noreferrer, noopener"
+                                >
+                                <svg class="footer__social-svg">
+                                    <use
+                                        class="footer__social-link"
+                                        xlink:href="assets/images/sprite.svg#instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a 
+                                class="footer__social-item"
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                                rel="noindex, nofollow, noreferrer, noopener"
+                                >
+                                <svg class="footer__social-svg">
+                                    <use
+                                        class="footer__social-link"
+                                        xlink:href="assets/images/sprite.svg#linkedin"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+        </footer>
+        <section class="copyright">
+            <div class="copyright__container">
+                <div class="copyright__wrapper">
+                    <span class="copyright__text">Copyright &#64;</span>
+                    <span class="copyright__year"></span>
+                    <span class="copyright__color">Brandoxide</span>
+                    <span class="copyright__text">All right reserved</span>
+                </div>
+            </div>
+        </section>
+        <div class="sigma-modal sigma-modal--none">
+            <div class="sigma-modal__text sigma-modal__text--top">
+                <h2 class="sigma-modal__text-hello"></h2>
+                <p class="sigma-modal__text-info">just today
+                    <span class="sigma-modal__text-date">27-07-2023</span>
+                </p>
+            </div>
+            
+            <div class="sigma-modal__center"></div>
+            <div class="sigma-modal__spin sigma-modal__spin--one"></div>
+            <div class="sigma-modal__spin sigma-modal__spin--two"></div>
+            <div class="sigma-modal__spin sigma-modal__spin--three"></div>
+            <div class="sigma-modal__spin sigma-modal__spin--four"></div>
+            <div class="sigma-modal__spin sigma-modal__spin--five"></div>
+            <div class="sigma-modal__spin sigma-modal__spin--six"></div>
+            <div class="sigma-modal__text sigma-modal__text--bottom">
+                <p class="sigma-modal__text-info">you can get 
+                    <span class="sigma-modal__text-info sigma-modal__text-info--colored">120%</span>
+                    discount for your any order</p>
+            </div>
+        </div>
+        <div class="inactiviti inactiviti--none">
+            <div class="inactiviti__wrapper">
+                <h2 class="inactiviti__title">Are you still here?</h2>
+                <p class="inactiviti__text">Do something if you are...</p>
+            </div>
+        </div>
+        <script src="site.js" type="module"></script>
+    </body>
+</html>

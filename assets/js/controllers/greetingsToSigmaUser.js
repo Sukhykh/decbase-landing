@@ -1,4 +1,4 @@
-import { getCurrentDate } from "./getCurrentDate.js";
+import { getCurrentDate } from "../utilities/getCurrentDate.js";
 
 const modal = document.querySelector('.sigma-modal')
 const date = document.querySelector('.sigma-modal__text-date')

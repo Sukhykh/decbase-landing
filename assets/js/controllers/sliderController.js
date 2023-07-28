@@ -1,4 +1,4 @@
-import { createTestimonialsCard } from './createTestimonialsCard.js'
+import { createTestimonialsCard } from '../construcrors/createTestimonialsCard.js'
 
 const slider = document.querySelector('.testimonials__content')
 

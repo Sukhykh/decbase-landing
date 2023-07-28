@@ -1,13 +1,14 @@
 'use strict'
-import { updateProgressBar } from "./assets/js/updateProgressBar.js";
-import { checkBurgerMenu, isOpenedBurgerMenu, closeBurgerMenu } from "./assets/js/burgerMenu.js";
-import { getLocalJson } from "./assets/js/getLocalJson.js";
-import { sliderController } from "./assets/js/sliderController.js";
-import { letestNewsController } from "./assets/js/letestNewsController.js";
-import { formValidation } from "./assets/js/formValidation.js";
-import { setYearToCopyright } from "./assets/js/setYearToCopyright.js";
-import { generateDataToHeader } from "./assets/js/generateDataToHeader.js";
-import { whatWoDoController } from "./assets/js/whatWoDoController.js";
+import { updateProgressBar } from "./assets/js/utilities/updateProgressBar.js";
+import { checkBurgerMenu, isOpenedBurgerMenu, closeBurgerMenu } from "./assets/js/controllers/burgerMenu.js";
+import { getLocalJson } from "./assets/js/fetches/getLocalJson.js";
+import { sliderController } from "./assets/js/controllers/sliderController.js";
+import { letestNewsController } from "./assets/js/controllers/letestNewsController.js";
+import { formValidation } from "./assets/js/utilities/formValidation.js";
+import { setYearToCopyright } from "./assets/js/utilities/setYearToCopyright.js";
+import { generateDataToHeader } from "./assets/js/controllers/generateDataToHeader.js";
+import { whatWoDoController } from "./assets/js/controllers/whatWoDoController.js";
+import { inactivityController } from "./assets/js/controllers/inactivityController.js";
 
 document.addEventListener("DOMContentLoaded", function() {
     /* elements */
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setYearToCopyright()
     generateDataToHeader()
     whatWoDoController(allBtn)
+    inactivityController()
 
     /* intervals ant timeouts */
     const headerData = window.setInterval(generateDataToHeader, 20000)
@@ -80,7 +82,10 @@ document.addEventListener("DOMContentLoaded", function() {
     /* listeners */
     window.addEventListener('resize', () => checkBurgerMenu(navigation))
     window.addEventListener('scroll', () => updateProgressBar(progressBar, totalHeight))
-    apiBar.addEventListener('click', generateDataToHeader)
+    apiBar.addEventListener('click', () => {
+        generateDataToHeader()
+        updateProgressBar(progressBar, totalHeight)
+    })
     footer.addEventListener('click', event => {
         if (event.target.classList.contains('footer__menu-link')) event.preventDefault()
     })
