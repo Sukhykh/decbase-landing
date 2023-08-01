@@ -1,8 +1,34 @@
 .twenty-years {
     @include section(19.8rem, 22rem);
+    position: relative;
+
+    &__dots-one {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateY(-100%);
+        background-image: url('../images/working-dots.png');
+        background-size: cover;
+        width: 212px;
+        height: 150px;
+        z-index: -1;
+    }
 
     &__container {
         @include container;
+        position: relative;
+    }
+
+    &__dots-two {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(-100%);
+        background-image: url('../images/main-dots.png');
+        background-size: cover;
+        width: 212px;
+        height: 150px;
+        z-index: -1;
     }
 
     &__wrapper {

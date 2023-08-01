@@ -1,6 +1,7 @@
 const modal = document.querySelector('.inactiviti')
 
-const inactivityTimer = 60000;
+// const inactivityTimer = 60000;
+const inactivityTimer = 6000000;
 let timeoutId;
 let resetTimeoutId;
 

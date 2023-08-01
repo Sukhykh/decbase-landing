@@ -1,5 +1,18 @@
 .what-we-do {
     @include section(22rem, 16.4rem);
+    position: relative;
+
+    &__dots {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateY(50%);
+        background-image: url('../images/big-dots.png');
+        background-size: cover;
+        width: 245px;
+        height: 254px;
+        z-index: -1;
+    }
 
     &__container {
         @include container;
@@ -69,6 +82,7 @@
     }
 
     &__card {
+        background-color: $white;
         max-width: 45rem;
         width: 100%;
         display: flex;

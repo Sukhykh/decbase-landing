@@ -398,6 +398,20 @@ a {
 .hero {
   margin-top: 9rem;
   margin-bottom: 14rem;
+  position: relative;
+}
+.hero__dots {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  background-image: url("../images/main-dots.png");
+  background-size: cover;
+  width: 212px;
+  height: 150px;
+  z-index: -1;
 }
 .hero__container {
   max-width: 72.9166666667vw;
@@ -543,6 +557,20 @@ a {
 .what-we-do {
   margin-top: 22rem;
   margin-bottom: 16.4rem;
+  position: relative;
+}
+.what-we-do__dots {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  background-image: url("../images/big-dots.png");
+  background-size: cover;
+  width: 245px;
+  height: 254px;
+  z-index: -1;
 }
 .what-we-do__container {
   max-width: 72.9166666667vw;
@@ -644,6 +672,7 @@ a {
           justify-content: center;
 }
 .what-we-do__card {
+  background-color: #ffffff;
   max-width: 45rem;
   width: 100%;
   display: -webkit-box;
@@ -846,11 +875,26 @@ a {
 .twenty-years {
   margin-top: 19.8rem;
   margin-bottom: 22rem;
+  position: relative;
+}
+.twenty-years__dots-one {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background-image: url("../images/working-dots.png");
+  background-size: cover;
+  width: 212px;
+  height: 150px;
+  z-index: -1;
 }
 .twenty-years__container {
   max-width: 72.9166666667vw;
   width: 100%;
   margin-inline: auto;
+  position: relative;
 }
 @media screen and (min-width: 1920px) {
   .twenty-years__container {
@@ -861,6 +905,19 @@ a {
   .twenty-years__container {
     max-width: 87.2727272727vw;
   }
+}
+.twenty-years__dots-two {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background-image: url("../images/main-dots.png");
+  background-size: cover;
+  width: 212px;
+  height: 150px;
+  z-index: -1;
 }
 .twenty-years__wrapper {
   width: 100%;
@@ -1205,6 +1262,19 @@ a {
 .testimonials {
   margin-top: 13.3rem;
   margin-bottom: 24.5rem;
+  position: relative;
+}
+.testimonials__dots {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translateY(-150%);
+      -ms-transform: translateY(-150%);
+          transform: translateY(-150%);
+  background-image: url("../images/main-dots.png");
+  background-size: cover;
+  width: 212px;
+  height: 150px;
 }
 .testimonials__container {
   max-width: 72.9166666667vw;
@@ -1387,6 +1457,31 @@ a {
 .form-section {
   margin-top: 8rem;
   margin-bottom: 9.2rem;
+  position: relative;
+}
+.form-section__dots-one {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background-image: url("../images/working-dots.png");
+  background-size: cover;
+  width: 212px;
+  height: 150px;
+}
+.form-section__dots-two {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  background-image: url("../images/main-dots.png");
+  background-size: cover;
+  width: 212px;
+  height: 150px;
 }
 .form-section__container {
   max-width: 72.9166666667vw;

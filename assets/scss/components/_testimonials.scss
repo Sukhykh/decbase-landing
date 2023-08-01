@@ -1,5 +1,17 @@
 .testimonials {
     @include section(13.3rem, 24.5rem);
+    position: relative;
+
+    &__dots {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(-150%);
+        background-image: url('../images/main-dots.png');
+        background-size: cover;
+        width: 212px;
+        height: 150px;
+    }
 
     &__container {
         @include container;

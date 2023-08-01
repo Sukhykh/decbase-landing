@@ -1,5 +1,18 @@
 .hero {
     @include section(9rem, 14rem);
+    position: relative;
+
+    &__dots {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateY(50%);
+        background-image: url('../images/main-dots.png');
+        background-size: cover;
+        width: 212px;
+        height: 150px;
+        z-index: -1;
+    }
 
     &__container {
         @include container
